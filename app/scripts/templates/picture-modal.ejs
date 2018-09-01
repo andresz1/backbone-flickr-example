@@ -1,0 +1,34 @@
+<div class="modal">
+  <button class="btn btn--icon picture-modal__back">
+    <i class="material-icons">
+      chevron_left
+    </i>
+  </button>
+
+  <div class="picture-modal">
+    <img
+      class="picture-modal__image"
+      src="<%= media.m %>"
+    />
+  </div>
+
+  <div class="picture-modal__content">
+    Title: <%= title %>
+    <br>
+    Taken at: <%= date_taken %>
+    <br>
+    Tags: <%= tags %>
+  </div>
+
+  <button class="btn btn--icon picture-modal__next">
+    <i class="material-icons">
+      chevron_right
+    </i>
+  </button>
+
+  <button class="btn btn--icon picture-modal__close">
+    <i class="material-icons">
+      close
+    </i>
+  </button>
+</div>

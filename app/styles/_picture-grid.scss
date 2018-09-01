@@ -1,0 +1,9 @@
+.picture-grid {
+  margin: 16px 0;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

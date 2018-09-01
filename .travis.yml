@@ -8,4 +8,9 @@ install:
   - npm install
   - bower install
 before_script:
+  - apt-get update && apt-get install -y python-dev
+  - curl -O https://bootstrap.pypa.io/get-pip.py
+  - python get-pip.py
+  - pip install awscli
   - grunt build
+  - aws s3 sync ./dist/ s3://backbone-flickr.com/ --acl public-read

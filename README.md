@@ -1,2 +1,56 @@
 # backbone-flikr-example [![Build Status](https://travis-ci.org/andresz1/backbone-flickr-example.svg?branch=master)](https://travis-ci.org/andresz1/backbone-flickr-example)
-A simple app which shows the public Flickr recently uploaded feed
+A simple project to learn [Backbone.js](http://backbonejs.org/) basics. Live [here](http://backbone-flickr.com.s3-website-us-east-1.amazonaws.com/). Shows you the public Flickr feed, allowing you to view the images either in a lightbox or on Flickr's site.
+
+## Build
+To develop and build this project you need to have installed [Node.js](https://nodejs.org/), and follow this steps.
+
+Install [Grunt-CLI](http://gruntjs.com/) globally.
+
+```bash
+npm install -g grunt-cli
+```
+
+Install [Bower](https://bower.io/) globally.
+
+```bash
+npm install -g bower
+```
+
+Clone (or download and unzip) the project to your file system an go into the directory of the project.
+
+```bash
+cd backbone-flickr-example/
+```
+
+Install dependencies.
+
+```bash
+npm install
+bower install
+```
+
+Run a local development server (livereload enabled).
+
+```bash
+grunt serve
+```
+
+Run defined tests and linting.
+
+```bash
+grunt test
+```
+
+Package the app (minify html, css and js). The output will be in the `dist/` folder.
+
+```bash
+grunt build
+```
+
+## Feedback
+
+Pull requests, feature ideas and bug reports are very welcome. We highly appreciate any feedback.
+
+## License
+
+MIT

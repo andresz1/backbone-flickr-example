@@ -1,6 +1,10 @@
 language: node_js
 node_js:
   - "7"
+addons:
+  apt:
+    packages:
+      - python-dev
 before_install:
   - npm install -g grunt-cli
   - npm install -g bower
@@ -8,7 +12,6 @@ install:
   - npm install
   - bower install
 before_script:
-  - apt-get install -y python-dev
   - curl -O https://bootstrap.pypa.io/get-pip.py
   - python get-pip.py
   - pip install awscli

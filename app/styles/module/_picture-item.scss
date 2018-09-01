@@ -1,7 +1,7 @@
 .picture-item {
-  min-width: 280px;
-  max-width: 280px;
-  margin: 8px;
+  min-width: $picture-item-width;
+  max-width: $picture-item-width;
+  margin: $picture-item-margin;
 
   &__header {
     padding: 8px 0;
@@ -11,8 +11,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 180px;
-    background-color: #C2C2C2;
+    height: $picture-item-image-height;
+    background-color: $picture-item-image-bg;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,6 +37,6 @@
   }
 
   &__title {
-    color: #0063DC;
+    color: $brand-primary;
   }
 }

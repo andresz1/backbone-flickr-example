@@ -1,0 +1,22 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn {
+  width: fit-content;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--icon > i {
+    color: white;
+    font-size: 32px;
+  }
+}

@@ -1,3 +1,4 @@
+/*global require*/
 'use strict';
 
 require.config({
@@ -10,6 +11,10 @@ require.config({
     underscore: '../bower_components/lodash/dist/lodash'  }
 });
 
-require(['spec/collections.js'], function() {
+var tests = [
+  'spec/collections/pictures.spec.js'
+];
+
+require(tests, function() {
   mocha.run();
 });

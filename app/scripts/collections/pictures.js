@@ -14,7 +14,7 @@ define([
 
     parse: function(response) {
       return response.items;
-    }
+    },
   });
 
   return PicturesCollection;

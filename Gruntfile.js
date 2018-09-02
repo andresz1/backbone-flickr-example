@@ -88,6 +88,7 @@ module.exports = function (grunt) {
             return [
               mountFolder(connect, 'test'),
               lrSnippet,
+              mountFolder(connect, 'node_modules'),
               mountFolder(connect, '.tmp'),
               mountFolder(connect, yeomanConfig.app)
             ];
@@ -132,7 +133,8 @@ module.exports = function (grunt) {
       all: {
         options: {
           run: true,
-          urls: ['http://localhost:<%= connect.test.options.port %>/index.html']
+          urls: ['http://localhost:<%= connect.test.options.port %>/index.html'],
+          growlOnSuccess: false
         }
       }
     },

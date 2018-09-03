@@ -6,9 +6,12 @@
     color: white;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    margin: 8px;
+    width: calc(100% - 16px);
+    padding: 8px;
     font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &__image {
@@ -19,7 +22,7 @@
 
   &__close {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 16px;
+    right: 16px;
   }
 }

@@ -1,5 +1,12 @@
 # backbone-flikr-example [![Build Status](https://travis-ci.org/andresz1/backbone-flickr-example.svg?branch=master)](https://travis-ci.org/andresz1/backbone-flickr-example)
-A simple project to learn [Backbone.js](http://backbonejs.org/) basics. Live [here](http://backbone-flickr.com.s3-website-us-east-1.amazonaws.com/). Shows you the public Flickr feed, allowing you to view the images either in a lightbox or on Flickr's site.
+A simple project to learn [Backbone.js](http://backbonejs.org/) basics :ghost: using [RequireJS](https://requirejs.org/), [Underscore.js](https://underscorejs.org/) and [JQuery](https://jquery.com/). Live [here](http://backbone-flickr.com.s3-website-us-east-1.amazonaws.com/). Shows you the public Flickr feed, allowing you to view the images either in a lightbox or on Flickr's site.
+
+## Features
+- Responsive Flickr's latest photos with caption and owner
+- Link to original photo post
+- Responsive lightbox with all photo information (you can also change the photo with :arrow_left: and :arrow_forward: keys)
+- Asynchronous image load treatment
+- Test automation
 
 ## Build
 To develop and build this project you need to have installed [Node.js](https://nodejs.org/), and follow this steps.
@@ -35,10 +42,12 @@ Run a local development server (livereload enabled).
 grunt serve
 ```
 
-Run defined tests and linting.
+Run defined tests using [Mocha](https://mochajs.org/), [Chai](http://www.chaijs.com/) and [Sinon](https://sinonjs.org/) and linting with [JSHint](http://jshint.com/).
 
 ```bash
 grunt test
+# or
+grunt serve:test # Shows results in a fancy way
 ```
 
 Package the app (minify html, css and js). The output will be in the `dist/` folder.

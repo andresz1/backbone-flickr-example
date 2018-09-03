@@ -4,7 +4,7 @@ A simple project to learn [Backbone.js](http://backbonejs.org/) basics :ghost: u
 ## Features
 - Responsive Flickr's latest photos with caption and owner
 - Link to original photo post
-- Responsive lightbox with all photo information (you can also change the photo with :arrow_left: and :arrow_forward: keys)
+- Responsive lightbox with all photo information (you can also change the photo with :arrow_left: and :arrow_right: keys)
 - Asynchronous image load treatment
 - Test automation
 

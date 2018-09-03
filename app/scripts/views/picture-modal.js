@@ -23,8 +23,6 @@ define([
       $(document).on('keydown', this.move);
 
       this.listenTo(this.model, 'change', this.render);
-
-      this.render();
     },
 
     render: function () {

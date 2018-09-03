@@ -12,7 +12,13 @@ require.config({
 });
 
 var tests = [
-  'spec/collections/pictures.spec.js'
+  'spec/fixtures.js',
+  'spec/collections/pictures.spec.js',
+  'spec/models/picture.spec.js',
+  'spec/views/app.spec.js',
+  'spec/views/picture-grid.spec.js',
+  'spec/views/picture-item.spec.js',
+  'spec/views/picture-modal.spec.js'
 ];
 
 require(tests, function() {

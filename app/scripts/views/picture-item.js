@@ -43,13 +43,13 @@ define([
     },
 
     preview: function () {
-      const pictureModalView = new PictureModalView({
+      var pictureModalView = new PictureModalView({
         model: this.model,
         collection: this.collection,
       });
 
       $('body')[0].append(pictureModalView.render().el);
-    },
+    }
   });
 
   return PictureItemView;

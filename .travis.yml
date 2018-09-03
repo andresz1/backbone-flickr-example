@@ -8,13 +8,13 @@ install:
   - npm install
   - bower install
 deploy:
-  - provider: script
-    script:
-      - sudo apt-get update && sudo apt-get install -y python-dev
-      - curl -O https://bootstrap.pypa.io/get-pip.py
-      - sudo python get-pip.py
-      - sudo pip install --ignore-installed awscli
-      - grunt build
-      - aws s3 sync ./dist/ s3://backbone-flickr.com/ --acl public-read
-    on:
-      branch: master
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: "backbone-flickr.com"
+  acl: public_read
+  skip_cleanup: true
+  local_dir: dist
+branches:
+  only:
+    - master
